@@ -24,7 +24,6 @@ export const Layout = () => {
       </Suspense>
       <Footer>
         <P>
-          {' '}
           &copy; 2023 Tetiana Kramarenko
           <br />
           All rights reserved.

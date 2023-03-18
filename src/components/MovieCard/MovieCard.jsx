@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
   GalleryItem,
@@ -8,11 +8,11 @@ import {
 } from './MovieCard.styled';
 
 function MovieCard({ movie: { id, title, poster_path } }) {
-  const location = useLocation();
+  // const location = useLocation();
 
   return (
     <GalleryItem>
-      <LinkStyle to={`/movies/${id}`} state={{ from: location }}>
+      <LinkStyle to={`/movies/${id}`}>
         <GalleryImage
           src={`https://image.tmdb.org/t/p/w500${poster_path}`}
           alt={title}
@@ -27,7 +27,7 @@ MovieCard.propTypes = {
   movie: PropTypes.shape({
     id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
-    posterPath: PropTypes.string,
+    poster_path: PropTypes.string,
   }).isRequired,
 };
 

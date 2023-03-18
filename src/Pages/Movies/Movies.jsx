@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 
-const About = () => {
+const Movies = () => {
   return (
     <main>
       <h1>Movies</h1>
@@ -13,4 +13,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Movies;
