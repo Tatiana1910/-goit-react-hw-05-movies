@@ -13,9 +13,9 @@ const MovieDetails = () => {
   const location = useLocation();
   const backLinkHref = location.state?.from ?? '/';
 
-  useEffect(() => {
-    getMovieById(id).then(setMovieId);
-  }, [id]);
+  // useEffect(() => {
+  //   getMovieById(id).then(setMovieId);
+  // }, [id]);
 
   return (
     <>
