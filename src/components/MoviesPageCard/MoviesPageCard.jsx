@@ -1,19 +1,19 @@
-import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
   GalleryItem,
   GalleryImage,
   MovieTitle,
   LinkStyle,
-} from './MovieCard.styled';
+} from './MoviesPageCard.styled';
 import no_image from '../../Fetch/defaultImage/no-thumb.jpg';
 
-function MovieCard({ movie: { id, title, poster_path } }) {
-  const location = useLocation();
-
+function MoviesPageCard({ movie: { id, title, poster_path }, query }) {
   return (
     <GalleryItem>
-      <LinkStyle to={`/movies/${id}/`} state={{ from: location }}>
+      <LinkStyle
+        to={`/movies/${id}/`}
+        state={{ from: `/movies?name=${query}` }}
+      >
         {poster_path === null ? (
           <GalleryImage src={no_image} alt={title} />
         ) : (
@@ -22,19 +22,19 @@ function MovieCard({ movie: { id, title, poster_path } }) {
             alt={title}
           />
         )}
-
         <MovieTitle>{title}</MovieTitle>
       </LinkStyle>
     </GalleryItem>
   );
 }
 
-MovieCard.propTypes = {
+MoviesPageCard.propTypes = {
   movie: PropTypes.shape({
     id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
     poster_path: PropTypes.string,
   }).isRequired,
+  query: PropTypes.string,
 };
 
-export default MovieCard;
+export default MoviesPageCard;

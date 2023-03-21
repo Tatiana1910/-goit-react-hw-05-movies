@@ -23,7 +23,7 @@ export const GalleryImage = styled.img`
   display: block;
   /* height: 360px; */
   width: 100%;
-
+  height: 360px;
   border-radius: 10px;
   color: black;
 `;

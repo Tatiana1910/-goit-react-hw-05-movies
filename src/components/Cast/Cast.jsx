@@ -1,5 +1,5 @@
 const Cast = () => {
-  return <>Reviews</>;
+  return <>Cast</>;
 };
 
 export default Cast;

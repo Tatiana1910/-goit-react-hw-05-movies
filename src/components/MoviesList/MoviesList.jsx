@@ -1,14 +1,17 @@
 import MovieCard from 'components/MovieCard/MovieCard';
 import PropTypes from 'prop-types';
-import { GalleryList } from './MoviesList.styled';
+import { GalleryList, Title } from './MoviesList.styled';
 
 function MoviesList({ movies }) {
   return (
-    <GalleryList>
-      {movies.map(movie => (
-        <MovieCard key={movie.id} movie={movie} />
-      ))}
-    </GalleryList>
+    <>
+      <Title>Trending today</Title>
+      <GalleryList>
+        {movies.map(movie => (
+          <MovieCard key={movie.id} movie={movie} />
+        ))}
+      </GalleryList>
+    </>
   );
 }
 

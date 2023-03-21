@@ -11,13 +11,3 @@ export const GalleryList = styled.ul`
   margin-bottom: 30px;
   padding: 0;
 `;
-
-export const Title = styled.h1`
-  text-align: center;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  color: #483c3c;
-  letter-spacing: 0.15em;
-  text-shadow: rgb(0, 0, 0, 0.4) 1px 0px 10px;
-`;
