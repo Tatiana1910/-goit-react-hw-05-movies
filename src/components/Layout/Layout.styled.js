@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Header = styled.header`
   background-image: linear-gradient(-110deg, rgb(255, 0, 0), rgb(233 88 170));
-  margin-bottom: 36px;
+
   padding-left: 60px;
   padding-bottom: 40px;
   padding-top: 40px;
@@ -13,14 +13,6 @@ export const Header = styled.header`
     gap: 30px;
     justify-content: start;
     max-height: 40px;
-  }
-`;
-
-export const Section = styled.section`
-  padding: 0 15px;
-
-  @media (min-width: 768px) {
-    padding: 0 30px;
   }
 `;
 

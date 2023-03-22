@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom';
 
 export const StyledLink = styled(Link)`
   padding: 7px 12px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
-  width: 200px;
+  width: 70px;
   gap: 5px;
   align-items: center;
   color: black;

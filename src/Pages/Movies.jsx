@@ -21,14 +21,10 @@ const Movies = () => {
   }, [query]);
 
   return (
-    <>
+    <main>
       <SearchForm />
-      {movies && (
-        <div>
-          <MoviesPageList query={query} movies={movies} />
-        </div>
-      )}
-    </>
+      {movies && <MoviesPageList query={query} movies={movies} />}
+    </main>
   );
 };
 

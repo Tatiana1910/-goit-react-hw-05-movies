@@ -11,3 +11,10 @@ export const GalleryList = styled.ul`
   margin-bottom: 30px;
   padding: 0;
 `;
+export const Section = styled.section`
+  padding: 0 15px;
+
+  @media (min-width: 768px) {
+    padding: 0 30px;
+  }
+`;
