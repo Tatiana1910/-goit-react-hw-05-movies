@@ -5,7 +5,7 @@ async function getMovieReviews(movieId) {
 
   const response = await fetch(`${url}${filter}`);
   const data = await response.json();
-  return data;
+  return data.results;
 }
 
 export default getMovieReviews;

@@ -1,7 +1,5 @@
 import { BackLink } from '../components/BackLink/BackLink';
 import { useState, useEffect, Suspense } from 'react';
-import Cast from 'components/Cast/Cast';
-import Reviews from 'components/Reviews/Reviews';
 
 import { Outlet, useLocation, useParams } from 'react-router-dom';
 
@@ -52,7 +50,6 @@ const MovieDetails = () => {
           <MoviePicture
             src={`https://image.tmdb.org/t/p/w500${poster_path}`}
             alt={original_title}
-            width="300"
           />
 
           <div>
@@ -77,12 +74,12 @@ const MovieDetails = () => {
         <AdditionalDiv>
           <h3>Additional Information</h3>
           <DivLinkStyle>
-            <LinkStyle to="cast" state={{ from: location.state.from }}>
-              <Cast />
+            <LinkStyle to="cast" state={location.state}>
+              Cast
             </LinkStyle>
 
-            <LinkStyle to="reviews" state={{ from: location.state.from }}>
-              <Reviews />
+            <LinkStyle to="reviews" state={location.state}>
+              Reviews
             </LinkStyle>
           </DivLinkStyle>
         </AdditionalDiv>

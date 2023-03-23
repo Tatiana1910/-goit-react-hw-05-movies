@@ -8,8 +8,8 @@ export const Form = styled.form`
   max-width: 600px;
   border: 1px solid black;
   margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 10px;
   border-radius: 10px;
   box-shadow: rgb(134 42 46) 0px 8px 8px 4px;

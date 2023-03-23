@@ -6,7 +6,7 @@ async function getMovieCast(movieId) {
   const response = await fetch(`${url}${filter}`);
   const data = await response.json();
 
-  return data;
+  return data.cast;
 }
 
 export default getMovieCast;

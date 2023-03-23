@@ -1,14 +1,25 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
+export const Container = styled.section`
+  padding: 15px;
+  background-color: beige;
+
+  @media (min-width: 768px) {
+    padding: 30px;
+  }
+`;
+
 export const DivMovie = styled.div`
   display: flex;
-  gap: 40px;
+  justify-content: center;
+  gap: 100px;
+  padding: 30px;
   font-weight: 500;
-  padding: 30px 150px;
 `;
 
 export const MoviePicture = styled.img`
+  width: 350px;
   border-radius: 5px;
   box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.2);
 `;
@@ -46,7 +57,6 @@ export const Genres = styled.ul`
 export const AdditionalDiv = styled.div`
   /* margin: auto; */
   text-align: center;
-  margin-bottom: 50px;
 `;
 
 export const DivLinkStyle = styled.div`
@@ -68,12 +78,5 @@ export const LinkStyle = styled(NavLink)`
     &:focus {
       color: inherit;
     }
-  }
-`;
-export const Container = styled.section`
-  padding: 0 15px;
-
-  @media (min-width: 768px) {
-    padding: 0 30px;
   }
 `;

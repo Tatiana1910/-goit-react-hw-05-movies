@@ -7,14 +7,13 @@ export const GalleryList = styled.ul`
   justify-content: space-evenly;
   gap: 30px;
   color: black;
-  margin-top: 30px;
-  margin-bottom: 30px;
   padding: 0;
 `;
 export const Section = styled.section`
-  padding: 0 15px;
+  padding: 15px;
+  background-color: beige;
 
   @media (min-width: 768px) {
-    padding: 0 30px;
+    padding: 30px;
   }
 `;
