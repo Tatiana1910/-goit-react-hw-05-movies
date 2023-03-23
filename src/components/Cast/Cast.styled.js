@@ -6,6 +6,7 @@ export const ListActor = styled.ul`
   gap: 30px;
   justify-content: center;
   list-style-type: none;
+  padding: 0;
 `;
 export const ItemActor = styled.li`
   width: calc((100%-100px) / 9);

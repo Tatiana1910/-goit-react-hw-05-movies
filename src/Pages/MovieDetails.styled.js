@@ -72,11 +72,17 @@ export const LinkStyle = styled(NavLink)`
   font-size: 22px;
   width: 200px;
   margin: auto;
+
+  transform: scale(1);
+  transition: transform 250ms linear;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    box-shadow: rgb(134 42 46) 0px 8px 8px 4px;
+    z-index: 100;
+  }
   &.active {
     background-color: rgb(229 213 221);
-    &:hover,
-    &:focus {
-      color: inherit;
-    }
   }
 `;
