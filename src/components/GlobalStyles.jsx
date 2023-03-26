@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
     
     body {
+   
       height: 100%;
       position: relative;
   margin: 0;
@@ -11,6 +12,10 @@ export const GlobalStyles = createGlobalStyle`
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+main{
+  flex-grow:1;
+  background-color: beige;
 }
 
 img {

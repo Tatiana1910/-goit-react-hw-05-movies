@@ -11,6 +11,7 @@ export const GalleryList = styled.ul`
 `;
 export const Section = styled.section`
   padding: 15px;
+
   background-color: beige;
 
   @media (min-width: 768px) {

@@ -6,14 +6,14 @@ import {
   LinkStyle,
 } from './MoviesPageCard.styled';
 import no_image from '../../Fetch/defaultImage/no-thumb.jpg';
+import { useLocation } from 'react-router-dom';
 
 function MoviesPageCard({ movie: { id, title, poster_path }, query }) {
+  const location = useLocation();
+
   return (
     <GalleryItem>
-      <LinkStyle
-        to={`/movies/${id}/`}
-        state={{ from: `/movies?name=${query}` }}
-      >
+      <LinkStyle to={`/movies/${id}/`} state={{ from: location }}>
         {poster_path === null ? (
           <GalleryImage src={no_image} alt={title} />
         ) : (

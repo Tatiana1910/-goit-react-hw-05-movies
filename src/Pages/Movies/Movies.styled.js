@@ -13,12 +13,13 @@ export const Form = styled.form`
   padding: 10px;
   border-radius: 10px;
   box-shadow: rgb(134 42 46) 0px 8px 8px 4px;
+  background-color: rgb(84 79 81 / 25%);
 `;
 export const Input = styled.input`
   display: inline-flex;
   width: 100%;
   padding: 8px 32px 8px 8px;
-  border: none;
+  border-radius: 10px;
   outline: none;
   padding-left: 10px;
   padding-right: 10px;
@@ -38,13 +39,13 @@ export const Icon = styled(BsSearch)`
 export const SearchButton = styled.button`
   width: 60px;
   height: 40px;
-  background-color: inherit;
+  background-color: transparent;
   border-radius: 10px;
   cursor: pointer;
   border: 0;
   transition: background-color 250ms linear;
   :hover,
   :focus-visible {
-    background-color: rgb(232 45 45 / 13%);
+    background-color: rgb(168 148 160);
   }
 `;

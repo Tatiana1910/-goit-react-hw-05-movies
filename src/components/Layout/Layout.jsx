@@ -2,7 +2,7 @@ import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 import { HiFilm } from 'react-icons/hi';
 import { AiOutlineHome } from 'react-icons/ai';
-import { Header, Link, P, Footer } from './Layout.styled';
+import { Header, Link, Footer, TextFooter } from './Layout.styled';
 import { Loader } from 'components/Loader/Loader';
 
 export const Layout = () => {
@@ -25,11 +25,11 @@ export const Layout = () => {
       </Suspense>
 
       <Footer>
-        <P>
+        <TextFooter>
           &copy; 2023 Tetiana Kramarenko
           <br />
           All rights reserved.
-        </P>
+        </TextFooter>
       </Footer>
     </>
   );

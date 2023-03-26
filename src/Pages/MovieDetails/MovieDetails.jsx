@@ -1,4 +1,4 @@
-import { BackLink } from '../components/BackLink/BackLink';
+import { BackLink } from '../../components/BackLink/BackLink';
 import { useState, useEffect, Suspense } from 'react';
 
 import { Outlet, useLocation, useParams } from 'react-router-dom';
@@ -16,6 +16,7 @@ import {
   DivLinkStyle,
   Container,
 } from './MovieDetails.styled';
+import { Loader } from 'components/Loader/Loader';
 
 const MovieDetails = () => {
   const { id } = useParams();
@@ -83,7 +84,7 @@ const MovieDetails = () => {
             </LinkStyle>
           </DivLinkStyle>
         </AdditionalDiv>
-        <Suspense fallback={<div>Loading subpage...</div>}>
+        <Suspense fallback={<Loader />}>
           <Outlet />
         </Suspense>
       </Container>
